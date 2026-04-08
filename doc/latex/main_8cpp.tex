@@ -1,0 +1,152 @@
+\doxysection{src/\+main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+The complete program of the dynamic queue. Includes a menu function so that the user may input any desired value.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include "{}node.\+h"{}}\newline
+{\ttfamily \+\#include "{}queue.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{main_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1}{menu}} ()
+\begin{DoxyCompactList}\small\item\em Menu that manages user input. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The complete program of the dynamic queue. Includes a menu function so that the user may input any desired value. 
+
+The options are as followed:\+
+\begin{DoxyItemize}
+\item Option 1 allows the user to input any value of type int.
+\item Option 2 allows the user to delete the \doxylink{class_node}{Node} at the front of the queue.
+\item Option 3 allows the user to view the value at the front of the queue.
+\item Option 5 allows the user to view all the Nodes of the queue, as well as the first and last elements.
+\item Option 5 allows the user to exit the program. 
+\end{DoxyItemize}
+
+Definition in file \doxymbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} Initializes a stack of type int.
+
+\texorpdfstring{$<$}{<} Attempts to delete the front of the queue.
+
+\texorpdfstring{$<$}{<} Sends a message if an error occurs.
+
+\texorpdfstring{$<$}{<} Attempts to retrieve the value in front of the queue.
+
+\texorpdfstring{$<$}{<} Sends a message if an error occurs.
+
+Definition at line \doxymbox{\hyperlink{main_8cpp_source_l00021}{21}} of file \doxymbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_queue}{Queue<int>}}\ queue;\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\doxymbox{\hyperlink{main_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1}{menu}}())}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ value;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nWhat\ value\ is\ to\ be\ stored\ in\ the\ new\ Node?:\ "{}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ cin\ >>\ value;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ queue.\doxymbox{\hyperlink{class_queue_ae18c8084fa24f4b7999f38467a44048c}{enqueue}}(\textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_node}{Node<int>}}(value));}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nThe\ node\ has\ been\ added\ with\ the\ value\ of\ "{}}\ <<\ value\ <<\ \textcolor{stringliteral}{"{}!"{}};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nThe\ value\ stored\ in\ the\ front\ of\ the\ queue\ is:\ "{}}\ <<\ queue.\doxymbox{\hyperlink{class_queue_a036f122e9bf968c80ccd73b9d38017c0}{dequeue}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nThe\ front\ of\ the\ queue\ has\ been\ deleted!"{}};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}(\textcolor{keyword}{const}\ std::exception\&\ e)\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ e.what()\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nThe\ value\ stored\ in\ the\ front\ of\ the\ queue\ is:\ "{}}\ <<\ queue.\doxymbox{\hyperlink{class_queue_a2a9d7c8360888cb9ab699aa062f6438a}{peek}}();}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}(\textcolor{keyword}{const}\ std::exception\&\ e)}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ e.what()\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ queue.\doxymbox{\hyperlink{class_queue_ac12b3b41a6dccc0636cf5ca5d520c719}{display}}();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nExiting\ the\ program..."{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ exit(0);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}
+\Hypertarget{main_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1}\index{main.cpp@{main.cpp}!menu@{menu}}
+\index{menu@{menu}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae83fcdbeb2b6757fc741ae953b633ee1} 
+int menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Menu that manages user input. 
+
+Returns an option to the main function. 
+
+Definition at line \doxymbox{\hyperlink{main_8cpp_source_l00090}{90}} of file \doxymbox{\hyperlink{main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ option;}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordflow}{do}}
+\DoxyCodeLine{00094\ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n\(\backslash\)n\(\backslash\)t-\/-\/-\/\ MENU!\ -\/-\/-\/"{}};}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n1)\ Push.\(\backslash\)n"{}};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}2)\ Pop.\(\backslash\)n"{}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}3)\ Peek.\(\backslash\)n"{}};}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}4)\ Display.\(\backslash\)n"{}};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}5)\ Exit.\(\backslash\)n"{}};}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/>\ Choose\ an\ option:\ "{}};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ cin\ >>\ option;}
+\DoxyCodeLine{00103\ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (option\ <\ 1\ ||\ option\ >\ 5);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{return}\ option;}
+\DoxyCodeLine{00105\ \}}
+
+\end{DoxyCode}

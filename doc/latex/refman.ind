@@ -1,0 +1,98 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Queue}
+    \subitem {Queue$<$ T $>$}, \hyperpage{17}
+
+  \indexspace
+
+  \item {dequeue}
+    \subitem {Queue$<$ T $>$}, \hyperpage{17}
+  \item {display}
+    \subitem {Queue$<$ T $>$}, \hyperpage{18}
+  \item {Dynamic Queue in C++}, \hyperpage{1}
+
+  \indexspace
+
+  \item {emptyQueue}
+    \subitem {Queue$<$ T $>$}, \hyperpage{18}
+  \item {enqueue}
+    \subitem {Queue$<$ T $>$}, \hyperpage{19}
+
+  \indexspace
+
+  \item {getNext}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+  \item {getSize}
+    \subitem {Queue$<$ T $>$}, \hyperpage{19}
+  \item {getValue}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+
+  \indexspace
+
+  \item {headers Directory Reference}, \hyperpage{11}
+  \item {headers/node.h}, \hyperpage{21}
+  \item {headers/queue.h}, \hyperpage{22}
+
+  \indexspace
+
+  \item {insertNext}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+  \item {insertValue}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{23}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{23}
+    \subitem {menu}, \hyperpage{24}
+  \item {menu}
+    \subitem {main.cpp}, \hyperpage{24}
+
+  \indexspace
+
+  \item {Node}
+    \subitem {Node$<$ T $>$}, \hyperpage{14}
+  \item {Node$<$ T $>$}, \hyperpage{13}
+    \subitem {getNext}, \hyperpage{15}
+    \subitem {getValue}, \hyperpage{15}
+    \subitem {insertNext}, \hyperpage{15}
+    \subitem {insertValue}, \hyperpage{15}
+    \subitem {Node}, \hyperpage{14}
+
+  \indexspace
+
+  \item {peek}
+    \subitem {Queue$<$ T $>$}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Queue}
+    \subitem {Queue$<$ T $>$}, \hyperpage{17}
+  \item {Queue$<$ T $>$}, \hyperpage{16}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Queue}, \hyperpage{17}
+    \subitem {dequeue}, \hyperpage{17}
+    \subitem {display}, \hyperpage{18}
+    \subitem {emptyQueue}, \hyperpage{18}
+    \subitem {enqueue}, \hyperpage{19}
+    \subitem {getSize}, \hyperpage{19}
+    \subitem {peek}, \hyperpage{19}
+    \subitem {Queue}, \hyperpage{17}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{23}
+
+  \indexspace
+
+  \item {src Directory Reference}, \hyperpage{11}
+  \item {src/main.cpp}, \hyperpage{23}, \hyperpage{25}
+  \item {src/node.cpp}, \hyperpage{26}
+  \item {src/queue.cpp}, \hyperpage{27}
+
+  \indexspace
+
+  \item {Tests}, \hyperpage{3}
+
+\end{theindex}

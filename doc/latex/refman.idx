@@ -1,0 +1,51 @@
+\indexentry{Dynamic Queue in C++@{Dynamic Queue in C++}|hyperpage}{1}
+\indexentry{Tests@{Tests}|hyperpage}{3}
+\indexentry{headers Directory Reference@{headers Directory Reference}|hyperpage}{11}
+\indexentry{src Directory Reference@{src Directory Reference}|hyperpage}{11}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{13}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}|hyperpage}{14}
+\indexentry{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{14}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}|hyperpage}{14}
+\indexentry{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{14}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}|hyperpage}{14}
+\indexentry{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{14}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!getNext@{getNext}|hyperpage}{15}
+\indexentry{getNext@{getNext}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!getValue@{getValue}|hyperpage}{15}
+\indexentry{getValue@{getValue}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!insertNext@{insertNext}|hyperpage}{15}
+\indexentry{insertNext@{insertNext}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!insertValue@{insertValue}|hyperpage}{15}
+\indexentry{insertValue@{insertValue}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{16}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!Queue@{Queue}|hyperpage}{17}
+\indexentry{Queue@{Queue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{17}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!````~Queue@{\texorpdfstring{$\sim$}{\string~}Queue}|hyperpage}{17}
+\indexentry{````~Queue@{\texorpdfstring{$\sim$}{\string~}Queue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{17}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!dequeue@{dequeue}|hyperpage}{17}
+\indexentry{dequeue@{dequeue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{17}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!display@{display}|hyperpage}{18}
+\indexentry{display@{display}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{18}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!emptyQueue@{emptyQueue}|hyperpage}{18}
+\indexentry{emptyQueue@{emptyQueue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{18}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!enqueue@{enqueue}|hyperpage}{19}
+\indexentry{enqueue@{enqueue}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{19}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!getSize@{getSize}|hyperpage}{19}
+\indexentry{getSize@{getSize}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{19}
+\indexentry{Queue$<$ T $>$@{Queue$<$ T $>$}!peek@{peek}|hyperpage}{19}
+\indexentry{peek@{peek}!Queue$<$ T $>$@{Queue$<$ T $>$}|hyperpage}{19}
+\indexentry{headers/node.h@{headers/node.h}|hyperpage}{21}
+\indexentry{headers/node.h@{headers/node.h}|hyperpage}{21}
+\indexentry{headers/queue.h@{headers/queue.h}|hyperpage}{22}
+\indexentry{headers/queue.h@{headers/queue.h}|hyperpage}{22}
+\indexentry{README.md@{README.md}|hyperpage}{23}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{23}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{23}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{23}
+\indexentry{main.cpp@{main.cpp}!menu@{menu}|hyperpage}{24}
+\indexentry{menu@{menu}!main.cpp@{main.cpp}|hyperpage}{24}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{25}
+\indexentry{src/node.cpp@{src/node.cpp}|hyperpage}{26}
+\indexentry{src/node.cpp@{src/node.cpp}|hyperpage}{26}
+\indexentry{src/queue.cpp@{src/queue.cpp}|hyperpage}{27}
+\indexentry{src/queue.cpp@{src/queue.cpp}|hyperpage}{27}

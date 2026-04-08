@@ -1,0 +1,29 @@
+\doxysection{node.\+h}
+\hypertarget{node_8h_source}{}\label{node_8h_source}\index{headers/node.h@{headers/node.h}}
+\doxymbox{\hyperlink{node_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00014}00014\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00015}\doxymbox{\hyperlink{class_node}{00015}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_node_a8414c674f16c71f76b46a3688da643d5}{Node}}}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ T\ value;}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_node_a8414c674f16c71f76b46a3688da643d5}{Node<T>}}*\ next;}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_node_a0ac1d44cfe588be564acf25485029bd8}{Node}}(T\ data,\ \doxymbox{\hyperlink{class_node_a8414c674f16c71f76b46a3688da643d5}{Node<T>}}*\ nextNode);\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_node_a0ac1d44cfe588be564acf25485029bd8}{Node}}(T\ data);\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_node_a0ac1d44cfe588be564acf25485029bd8}{Node}}();\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_node_a9aeb9ade451cf7acf8a2654e9ac8a6d0}{insertValue}}(T\ data);\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_node_ae9295786f096fe64958e6d46802e3b24}{insertNext}}(\doxymbox{\hyperlink{class_node_a8414c674f16c71f76b46a3688da643d5}{Node<T>}}*\ nextNode);\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ T\ \doxymbox{\hyperlink{class_node_aecea97aa9915521fe092d92a8e7fc8b8}{getValue}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_node_a8414c674f16c71f76b46a3688da643d5}{Node<T>}}*\ \doxymbox{\hyperlink{class_node_a9c09d10b85ff8b1448448e96488b75fb}{getNext}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00030}00030\ \};}
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{node_8h_source_l00032}00032\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{node_8cpp}{../src/node.cpp}}"{}}\ }
+
+\end{DoxyCode}
