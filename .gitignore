@@ -28,6 +28,7 @@ Icon
 *.user
 *.xcuserstate
 DerivedData/
+.DS_Store
 
 # --- Python (If you use scripts for testing) ---
 __pycache__/
